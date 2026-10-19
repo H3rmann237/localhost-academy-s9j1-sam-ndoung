@@ -1,0 +1,11 @@
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS "courses" (
+	"id"	INTEGER,
+	"title"	TEXT NOT NULL,
+	"description"	TEXT NOT NULL,
+	"duration_hours"	INTEGER NOT NULL,
+	"level"	TEXT NOT NULL DEFAULT 'Beginner',
+	"created_at"	TEXT DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY("id" AUTOINCREMENT)
+);
+COMMIT;
